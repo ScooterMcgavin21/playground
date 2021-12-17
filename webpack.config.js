@@ -29,6 +29,10 @@ module.exports = {
     hot: true
   },
 
+  resolve: {
+    extensions: ['.js', '.json', '.ts'],
+  },
+
   module: {
     rules: [
       {   // supports sass aswell which im not using
@@ -40,7 +44,7 @@ module.exports = {
         ], 
       },
       {
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'

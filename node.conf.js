@@ -6,3 +6,9 @@ module.exports = {
     MAIN_URL = process.env.MAIN_URL
   }
 };
+
+module.exports = {
+  env: {
+    COVALENTHQ = process.env.COVALENTHQ 
+  }
+}
