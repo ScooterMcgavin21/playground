@@ -16,6 +16,21 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   devtool: 'source-map',
+  devServer: {
+    static: './dist'
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        },
+      },
+    ],
+  },
 
   plugins: plugins
 
