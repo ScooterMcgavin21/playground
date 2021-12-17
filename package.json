@@ -4,8 +4,9 @@
   "scripts": {
     "start": "webpack serve --open",
     "watch": "webpack --watch",
-    "build": "webpack --config webpack.config.js",
-    "clean": "rm -rf dist"
+    "build": "NODE_ENV=production webpack",
+    "clean": "rm -rf dist",
+    "build-dev": "webpack"
   },
   "license": "ISC",
   "dependencies": {
@@ -17,7 +18,10 @@
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
     "dotenv-webpack": "^7.0.3",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss-loader": "^6.2.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
