@@ -20,8 +20,8 @@ function BlockData() {
     const response = await fetch(process.env.COVALENTHQ)
     const data = await response.json()
     setItems(data.data.items);
-
   }
+  
   return (
     <div>
       {console.log(items)}
