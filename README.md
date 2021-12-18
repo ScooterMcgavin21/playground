@@ -1,5 +1,2 @@
-# 3rd times the charm
+<p> 3rd times the charm</p>
 
-```
-npm run build
-```
