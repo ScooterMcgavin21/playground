@@ -1,2 +1,2 @@
-<p><small>3rd times the charm<</small></p>
+<p><small>3rd times the charm</small></p>
 
